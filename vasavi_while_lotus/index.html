@@ -24,6 +24,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        @media only screen and (max-width: 768px) {
+            .header-col-mid #mainmenu {
+                top: 120px;
+            }
+            .p-sm-relative{
+                display: block;
+            }
+            .location_height{
+                height: 70vh !important;
+            }
+            .mobile_text_position{
+                justify-content: flex-start !important;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -313,7 +330,7 @@
                 <div class="spacer-double"></div>
 
                 <div class="row g-3">
-                  <div class="col-md-3 col-6">
+                  <div class="col-md-3 col-12">
                         <div class="bg-dark-2 py-4 rounded-1 text-center">
                             <h4>Initial Area Range</h4>
                             <div class="d-flex justify-content-center align-items-center">
@@ -323,7 +340,7 @@
                         </div>
                   </div>
 
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                           <div class="bg-dark-2 py-4 rounded-1 text-center">
                               <h4>Mid Area Range</h4>
                               <div class="d-flex justify-content-center align-items-center">
@@ -332,8 +349,7 @@
                               </div>
                           </div>
                     </div>
-
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                           <div class="bg-dark-2 py-4 rounded-1 text-center">
                               <h4>Mini-Ultra Area Range</h4>
                               <div class="d-flex justify-content-center align-items-center">
@@ -343,7 +359,7 @@
                           </div>
                     </div>
 
-                    <div class="col-md-3 col-6">
+                    <div class="col-md-3 col-12">
                           <div class="bg-dark-2 py-4 rounded-1 text-center">
                               <h4>Ultra Area Range</h4>
                               <div class="d-flex justify-content-center align-items-center">
@@ -700,7 +716,7 @@
                         <ul class="d-tab-content pt-3">
                             <li>
                                 <div class="row g-4 justify-content-between">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 location_height">
                                         <div class="relative bg-dark-2 rounded-1 h-100">
                                             <h3 class="fs-32 mb-4 p-40">Near By</h3>
                                             <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
@@ -731,7 +747,7 @@
                             </li>
                             <li>
                                 <div class="row g-4 justify-content-between">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 location_height">
                                         <div class="relative bg-dark-2 rounded-1 h-100">
                                             <h3 class="fs-32 mb-4 p-40">Education/I.T</h3>
                                             <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
@@ -760,7 +776,7 @@
                             </li>
                             <li>
                                 <div class="row g-4 justify-content-between">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 location_height">
                                         <div class="relative bg-dark-2 rounded-1 h-100">
                                             <h3 class="fs-32 mb-4 p-40">Hospitals</h3>
                                             <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
@@ -789,7 +805,7 @@
                             </li>
                             <li>
                                 <div class="row g-4 justify-content-between">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 location_height">
                                         <div class="relative bg-dark-2 rounded-1 h-100">
                                             <h3 class="fs-32 mb-4 p-40">Hotels & Supermarket</h3>
                                             <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
@@ -1173,7 +1189,7 @@
 
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 mb-sm-30">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mobile_text_position">
                         <i class="fs-60 id-color icon_phone"></i>
                         <div class="ms-3">
                             <h4 class="mb-0">Call Us</h4>
@@ -1183,7 +1199,7 @@
                 </div>
                 
                 <div class="col-lg-4 col-md-6 mb-sm-30">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mobile_text_position">
                         <i class="fs-60 id-color icon_clock"></i>
                         <div class="ms-3">
                             <h4 class="mb-0">Opening Hours</h4>
@@ -1193,7 +1209,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-sm-30">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mobile_text_position">
                         <i class="fs-60 id-color icon_mail"></i>
                         <div class="ms-3">
                             <h4 class="mb-0">Email Us</h4>
@@ -1290,9 +1306,13 @@
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content p-2">
   
+        <div style="width: 100%;text-align: right;">
+            <button type="button" class="btn-close btn1" data-bs-dismiss="modal"></button>
+        </div>
+       
         <div class="row">
 
-            <div class="col-md-7 col-6 pt-5 pb-2 px-5">
+            <div class="col-md-7 col-sm-12 pt-5 pb-2 px-5">
 
                      
                             
@@ -1318,7 +1338,7 @@
 
                 <div class="row">
                     
-                    <div class="col-md-6 col-6 py-2">
+                    <div class="col-md-6 col-12 py-2">
 
                         <div class="bg-dark-3 py-2 rounded-1 text-center text-light">
                             <h4>Email:</h4>
@@ -1328,7 +1348,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6 col-6 py-2">
+                    <div class="col-md-6 col-12 py-2">
 
                         <div class="bg-dark-3 py-2 rounded-1 text-center text-light">
                             <h4>Call:</h4>
@@ -1342,12 +1362,12 @@
 
             </div>
 
-            <div class="col-md-5 col-6">
+            <div class="col-md-5 col-sm-12">
 
                 <!-- Modal Header -->
             <div class="modal-header">
                 <h3 class="modal-title" id="modal-title">Enquire Now</h3>
-                <button type="button" class="btn-close btn1" data-bs-dismiss="modal"></button>
+                <!-- <button type="button" class="btn-close btn1" data-bs-dismiss="modal"></button> -->
             </div>
     
           <!-- Modal body -->
