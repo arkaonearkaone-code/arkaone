@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+
+        .submenu{
+                left:101%;
+                top: -22%;
+            }
+
         @media screen and (max-width: 768px) {
             .mobile_display{
                 display: block !important;
@@ -56,8 +62,16 @@
                                 Projects
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="javascript:void(0)">Ongoing Projects</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Proposed Projects</a></li>
+                                <li class="dropdown">
+                                    
+                                    <a class="dropdown-item dropdown-toggle ongoing" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ongoing Projects</a>
+                                    
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a class="dropdown-item" href="https://vasavi-white-lotus.arkaonearkaone.workers.dev/">Vasavi-White-Lotus</a></li>
+                                        <li><a class="dropdown-item" href="https://vasavi-subhiksham.arkaonearkaone.workers.dev/">Vasavi-Subhiksham</a></li>
+                                    </ul>
+                                
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link header-link" href="gallery.html">Gallery</a></li>
@@ -74,7 +88,7 @@
 
     <section class="page-hero">
         <div class="page-hero-media">
-            <img src="assets/image(2).jpg" alt="Ombara Facilities">
+            <img src="img/gallery/gallery7.webp" alt="Ombara Facilities">
         </div>
         <div class="page-hero-overlay"></div>
         <div class="container">

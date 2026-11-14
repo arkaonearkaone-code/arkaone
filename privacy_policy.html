@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+
+        .submenu{
+                left:101%;
+                top: -22%;
+            }
+
+        @media screen and (max-width: 768px) {
+            .mobile_display{
+                display: block !important;
+            }
+            .hero-slide-title{
+                font-size: 1.2rem;
+            }
+            .register-submit-btn{
+                margin: 1rem 0 1.15rem 0 !important;
+            }   
+        }
+    </style>
+
 </head>
 <body class="is-loading always-show-header page-static">
 
@@ -42,8 +62,16 @@
                                 Projects
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="javascript:void(0)">Ongoing Projects</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Proposed Projects</a></li>
+                                <li class="dropdown">
+                                    
+                                    <a class="dropdown-item dropdown-toggle ongoing" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ongoing Projects</a>
+                                    
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a class="dropdown-item" href="https://vasavi-white-lotus.arkaonearkaone.workers.dev/">Vasavi-White-Lotus</a></li>
+                                        <li><a class="dropdown-item" href="https://vasavi-subhiksham.arkaonearkaone.workers.dev/">Vasavi-Subhiksham</a></li>
+                                    </ul>
+                                
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link header-link" href="gallery.html">Gallery</a></li>
