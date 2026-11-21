@@ -328,7 +328,7 @@ function initFeatureGalleryScroll() {
 }
 
 $(document).ready(function () {
-    const slideTitles = ['Mrs. Anjana V', 'Mr. Alla Ramakrishna (RK Alla)'];
+    const slideTitles = ['Mr. Alla Ramakrishna (RK Alla)', 'Mrs. Anjana V'];
     const $header = $('.header').first();
     const header = $header.get(0);
     const $footer = $('.footer').first();
