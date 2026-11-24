@@ -19,6 +19,14 @@
                 top: -22%;
             }
 
+            .desktop_menu{
+                display: block;
+            }
+
+            .mobile_menu{
+                display: none;
+            }
+
         @media screen and (max-width: 768px) {
             .mobile_display{
                 display: block !important;
@@ -28,6 +36,13 @@
             }
             .register-submit-btn{
                 margin: 1rem 0 1.15rem 0 !important;
+            }
+            .desktop_menu{
+                display: none;
+            }
+
+            .mobile_menu{
+                display: block;
             }   
         }
     </style>
@@ -57,7 +72,7 @@
                        
                         <li class="nav-item"><a class="nav-link header-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link header-link" href="about.html">About Us</a></li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown desktop_menu">
                             <a class="nav-link header-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Projects
                             </a>
@@ -73,6 +88,18 @@
                                     </ul>
                                 
                                 </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown mobile_menu">
+                            <a class="nav-link header-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Ongoing Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.vasavivijayvihar.com/">Vasavi Vijay Vihar</a></li>                                     
+                                <li><a class="dropdown-item" href="https://vasavi-white-lotus.arkaonearkaone.workers.dev/">Vasavi White Lotus</a></li>
+                                <li><a class="dropdown-item" href="https://vasavi-subhiksham.arkaonearkaone.workers.dev/">Vasavi Subhiksham</a></li>
+                                   
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link header-link" href="gallery.html">Gallery</a></li>
